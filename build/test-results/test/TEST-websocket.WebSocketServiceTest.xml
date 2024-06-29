@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="websocket.WebSocketServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-29T18:36:53" hostname="Mohmmeds-MacBook-Pro.local" time="1.203">
+  <properties/>
+  <testcase name="test start method connects to web sockets()" classname="websocket.WebSocketServiceTest" time="1.203"/>
+  <system-out><![CDATA[20:36:53.619 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Jedis name=#1
+20:36:54.165 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Jedis name=#2
+20:36:54.170 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for WebSocketConsumer name=#3
+20:36:54.205 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+20:36:54.495 [Test worker @coroutine#1] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#4
+20:36:54.500 [Test worker @coroutine#1] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering kotlin.Unit on WebSocketConsumer(mockkConstructor<WebSocketConsumer>()).connectToWebSocket(ws://quotes-uri, continuation {})
+20:36:54.500 [Test worker @coroutine#1] INFO websocket.WebSocketService - Connected to quotes websocket
+20:36:54.501 [Test worker @coroutine#1] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering kotlin.Unit on WebSocketConsumer(mockkConstructor<WebSocketConsumer>()).connectToWebSocket(ws://instruments-uri, continuation {})
+20:36:54.501 [Test worker @coroutine#1] INFO websocket.WebSocketService - Connected to instruments websocket
+20:36:54.504 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#5
+20:36:54.507 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#6
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

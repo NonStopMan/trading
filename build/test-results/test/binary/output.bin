@@ -1,0 +1,11 @@
+t20:36:53.619 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Jedis name=#1
+t20:36:54.165 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Jedis name=#2
+€20:36:54.170 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for WebSocketConsumer name=#3
+Ã20:36:54.205 [Test worker] DEBUG io.mockk.impl.stub.CommonClearer - Clearing [] mocks ClearOptions(answers=true, recordedCalls=true, childMocks=true, verificationMarks=true, exclusionRules=true)
+®20:36:54.495 [Test worker @coroutine#1] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#4
+å20:36:54.500 [Test worker @coroutine#1] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering kotlin.Unit on WebSocketConsumer(mockkConstructor<WebSocketConsumer>()).connectToWebSocket(ws://quotes-uri, continuation {})
+h20:36:54.500 [Test worker @coroutine#1] INFO websocket.WebSocketService - Connected to quotes websocket
+ê20:36:54.501 [Test worker @coroutine#1] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering kotlin.Unit on WebSocketConsumer(mockkConstructor<WebSocketConsumer>()).connectToWebSocket(ws://instruments-uri, continuation {})
+m20:36:54.501 [Test worker @coroutine#1] INFO websocket.WebSocketService - Connected to instruments websocket
+¡20:36:54.504 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#5
+¡20:36:54.507 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Unit name=child of mockkConstructor<WebSocketConsumer>()#6

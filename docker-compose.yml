@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis:6.2.5
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  partner-service:
+    image: openjdk:17
+    volumes:
+      - ./:/app
+    command: bash -c "cd /app && java -jar partner-service-1.0.1-all.jar --port=8032"
+    ports:
+      - "8032:8032"
+    depends_on:
+      - redis
+
+
+  candlesticks-service:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./src/main/resources/application.conf:/app/config/application.conf
+    depends_on:
+      - redis
+#networks:
+#  default:
+#    name: backend-network
+#    driver: bridge
